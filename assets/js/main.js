@@ -28,6 +28,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: .12 });
 
+document.querySelectorAll('.step').forEach(el => el.classList.add('reveal'));
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 const travelForm = document.querySelector('#travel-form');
