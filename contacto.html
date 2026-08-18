@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Velora Travel</title>
+  <meta name="description" content="Contacta a Velora Travel y comienza a diseñar tu próximo viaje.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Velora Travel">
+      <img src="assets/img/velora-logo.png" alt="Velora Travel">
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="" href="index.html">Inicio</a>
+<a class="" href="destinos.html">Destinos</a>
+<a class="" href="experiencias.html">Experiencias</a>
+<a class="" href="viajes-a-medida.html">A la medida</a>
+<a class="" href="nosotros.html">Nosotros</a>
+<a class="active" href="contacto.html">Contacto</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-gold" href="contacto.html">Diseñar mi viaje</a>
+      <button class="menu-toggle" aria-label="Abrir menú"><span></span></button>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <section class="page-hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2200&q=90" alt="Paisaje premium">
+    </div>
+    <div class="container hero-content">
+      <span class="eyebrow">Concierge Velora</span>
+      <h1 class="section-title">Hablemos de tu próximo viaje.</h1>
+      <p>Cuéntanos qué tienes en mente. Nosotros nos encargamos de convertirlo en una propuesta clara y bien diseñada.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <aside class="contact-card reveal">
+        <span class="eyebrow">Contacto</span>
+        <h2 class="section-title">Tu viaje empieza aquí.</h2>
+        <p>Mientras más nos cuentes, mejor podremos entender el tipo de experiencia que estás buscando.</p>
+        <div class="contact-list">
+          <div><span>Atención</span><div>Personalizada y con cita previa</div></div>
+          <div><span>Canal</span><div>WhatsApp · Correo · Videollamada</div></div>
+          <div><span>Especialidad</span><div>Viajes a la medida y experiencias premium</div></div>
+        </div>
+      </aside>
+
+      <form class="form reveal" id="travel-form">
+        <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" required></div>
+        <div class="field"><label for="destino">Destino o idea</label><input id="destino" name="destino"></div>
+        <div class="field"><label for="fecha">Fecha aproximada</label><input id="fecha" name="fecha" placeholder="Ej. Octubre 2026"></div>
+        <div class="field"><label for="viajeros">Número de viajeros</label><input id="viajeros" name="viajeros" type="number" min="1"></div>
+        <div class="field"><label for="presupuesto">Presupuesto estimado</label><select id="presupuesto" name="presupuesto"><option value="">Seleccionar</option><option>$50,000 – $100,000 MXN</option><option>$100,000 – $200,000 MXN</option><option>$200,000 – $400,000 MXN</option><option>$400,000+ MXN</option></select></div>
+        <div class="field"><label for="experiencia">Tipo de experiencia</label><select id="experiencia" name="experiencia"><option value="">Seleccionar</option><option>Escapada premium</option><option>Luna de miel</option><option>Europa</option><option>Crucero</option><option>Safari</option><option>Viaje familiar</option><option>Otro</option></select></div>
+        <div class="field full"><label for="mensaje">Cuéntanos más</label><textarea id="mensaje" name="mensaje" placeholder="Qué quieres vivir, qué no quieres, hoteles que te gustan, celebraciones, preferencias..."></textarea></div>
+        <div class="field full"><button class="btn btn-dark" type="submit">Enviar por WhatsApp</button></div>
+        <p class="form-note">El formulario está preparado para abrir WhatsApp. Solo falta sustituir el número oficial de Velora en <strong>assets/js/main.js</strong>.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/img/velora-logo.png" alt="Velora Travel">
+        <p class="footer-copy">Viajes extraordinarios, diseñados con sensibilidad, detalle y una atención que comienza mucho antes de abordar el avión.</p>
+      </div>
+      <div>
+        <div class="footer-title">Explora</div>
+        <div class="footer-links">
+          <a href="destinos.html">Destinos</a>
+          <a href="experiencias.html">Experiencias</a>
+          <a href="viajes-a-medida.html">Viajes a la medida</a>
+          <a href="nosotros.html">Nosotros</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Concierge</div>
+        <div class="footer-links">
+          <a href="contacto.html">Diseñar mi viaje</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Velora Travel. Todos los derechos reservados.</span>
+      <span>El mundo merece conocerte.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
