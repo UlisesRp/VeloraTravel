@@ -1,21 +1,25 @@
-# Velora Travel
+# Velora Travel V4
 
-Sitio multipágina listo para GitHub Pages.
+Ajustes aplicados:
+- isotipo sin fondo blanco
+- footer con logo correcto y sin recuadro
+- Bacalar sin etiqueta de "producto estrella"
+- nuevas fotos para Mazatlán, Barrancas del Cobre/Chepe y Bacalar
+- destinos internacionales presentados como propios, sin referencias externas
+- imagen de velero en la sección especial de Bacalar
+- hero de Nosotros con foto de alberca
+- sección forma de trabajar con foto de restaurante
+- hero de Contacto con foto de habitación
 
-## Estructura
-- index.html
-- destinos.html
-- experiencias.html
-- viajes-a-medida.html
-- nosotros.html
-- contacto.html
-- assets/css/styles.css
-- assets/js/main.js
-- assets/img/velora-logo.png
+- hero de inicio regresado a la costa italiana
+- Barrancas del Cobre con imagen de tren bajo la nieve
+- Chiapas con imagen de cañón y río
+- Turquía con imagen aérea de Estambul
+- hero de destinos con imagen desde avión
 
-## Importante
-En `assets/js/main.js` sustituye:
-`const phone = '5210000000000';`
-por el número oficial de WhatsApp de Velora en formato internacional.
+- Grecia actualizada con imagen del Partenón
+- Hero de Viajes a la medida actualizado con imagen de globos aerostáticos
 
-Las fotografías de demo están cargadas desde Unsplash. Para producción conviene descargarlas y alojarlas dentro de `assets/img`.
+- isotipo actualizado con nueva versión circular y borde redondeado
+
+- WhatsApp oficial configurado: +52 55 1900 0905

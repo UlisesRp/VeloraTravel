@@ -28,7 +28,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: .12 });
 
-document.querySelectorAll('.step').forEach(el => el.classList.add('reveal'));
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 const travelForm = document.querySelector('#travel-form');
@@ -39,7 +38,7 @@ if (travelForm) {
     const values = Object.fromEntries(data.entries());
 
     const message =
-`Hola Velora Travel, quiero diseñar un viaje a la medida.
+`Hola Velora Travel, quiero información para mi próximo viaje.
 
 Nombre: ${values.nombre || ''}
 Destino o idea: ${values.destino || ''}
@@ -52,7 +51,7 @@ Mensaje:
 ${values.mensaje || ''}`;
 
     // REEMPLAZA ESTE NÚMERO POR EL WHATSAPP OFICIAL DE VELORA.
-    const phone = '5210000000000';
+    const phone = '5215519000905';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   });
 }
