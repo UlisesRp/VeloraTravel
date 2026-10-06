@@ -8,15 +8,28 @@ window.addEventListener('scroll', () => {
 });
 
 menuToggle?.addEventListener('click', () => {
-  nav?.classList.toggle('mobile-open');
-  document.body.classList.toggle('menu-open');
+  const isOpen = nav?.classList.toggle('mobile-open') ?? false;
+  document.body.classList.toggle('menu-open', isOpen);
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
 document.querySelectorAll('.nav a').forEach(link => {
   link.addEventListener('click', () => {
     nav?.classList.remove('mobile-open');
     document.body.classList.remove('menu-open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
   });
+});
+
+
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && nav?.classList.contains('mobile-open')) {
+    nav.classList.remove('mobile-open');
+    document.body.classList.remove('menu-open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+    menuToggle?.focus();
+  }
 });
 
 const observer = new IntersectionObserver((entries) => {
@@ -50,7 +63,6 @@ Tipo de experiencia: ${values.experiencia || ''}
 Mensaje:
 ${values.mensaje || ''}`;
 
-    // REEMPLAZA ESTE NÚMERO POR EL WHATSAPP OFICIAL DE VELORA.
     const phone = '5215519000905';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   });
